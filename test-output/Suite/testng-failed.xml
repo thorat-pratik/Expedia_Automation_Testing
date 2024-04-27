@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.expedia.Tests.CarsTest">
+        <methods>
+          <include name="initialsetup"/>
+          <include name="testResultsWithFilters"/>
+          <include name="postTestMethod"/>
+          <include name="finaltest"/>
+          <include name="beforeClass"/>
+          <include name="testCarTypeSearch"/>
+          <include name="destroy"/>
+          <include name="testSearchWithValidLocations"/>
+          <include name="testResultsWithSort"/>
+        </methods>
+      </class> <!-- com.expedia.Tests.CarsTest -->
+      <class name="com.expedia.Tests.PackageTest">
+        <methods>
+          <include name="finaltest"/>
+          <include name="testDownloadApp"/>
+          <include name="initialsetup"/>
+          <include name="testTravelBlog"/>
+          <include name="checkCruiseWithInValidData"/>
+          <include name="beforeClass"/>
+          <include name="afterMethod"/>
+          <include name="destroy"/>
+        </methods>
+      </class> <!-- com.expedia.Tests.PackageTest -->
+      <class name="com.expedia.Tests.FlightsTest">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="postTestMethod"/>
+          <include name="finaltest"/>
+          <include name="initialsetup"/>
+          <include name="sortFlightsPopular"/>
+          <include name="destroy"/>
+        </methods>
+      </class> <!-- com.expedia.Tests.FlightsTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "dtd/testng-1.0.dtd">
+<!-- ParallelTestSuite -->
+<suite name="ParallelTestSuite" parallel="tests" thread-count="10">
+	<!-- FlightsTest -->
+	<test name="FlightsTest" parallel="false">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.expedia.Tests.FlightsTest">
+			</class>
+		</classes>
+	</test>
+	<!-- PackageTest -->
+	<test name="PackageTest" parallel="false">
+		<parameter name="browser" value="edge" />
+		<classes>
+			<class name="com.expedia.Tests.PackageTest">
+			</class>
+		</classes>
+	</test>
+	<!-- CarsTest -->
+	<test name="CarsTest" parallel="false">
+		<parameter name="browser" value="firefox" />
+		<classes>
+			<class name="com.expedia.Tests.CarsTest">
+			</class>
+		</classes>
+	</test>
+	<!-- CucumberTest -->
+	<test name="CucumberTest" parallel="false">
+		<parameter name="browser" value="edge" />
+		<classes>
+			<class name="com.expedia.cucumber.TestRunner">
+			</class>
+		</classes>
+	</test>
+	<!-- HomePageTest -->
+	<test name="DataDrivenTest" parallel="false">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.expedia.Tests.HomePageTest">
+			</class>
+		</classes>
+	</test>
+</suite>
+<!-- <groups>
+      <run>
+        <include name="smoke" />
+      </run>
+    </groups>-->

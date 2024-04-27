@@ -1,0 +1,22 @@
+# Maven specific
+target/
+
+# IDE files
+.idea/
+*.iml
+*.ipr
+*.iws
+.idea_modules/
+.metadata/
+# Eclipse specific
+.classpath
+.project
+.settings/
+.screenshots/
+# NetBeans specific
+nb-configuration.xml
+build/
+nbproject/private/
+Success_screenshots/
+Failed_screenshots/
+Skip_screenshots/
